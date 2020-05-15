@@ -32,4 +32,4 @@ I found [this](https://github.com/thisredone/vue-cli-plugin-coffeescript) packag
 
 ## Troubleshooting
 
-You should turn off ESLint or any non-coffee lint you have, of course :wink:
+Note that vue-loader uses `lang="coffee"` to identify components which are using Coffeescript, but `lang="coffee"` is not recognizable for ESLint. Fortunately, ESLint (following traditional HTML) uses `type="xxx"` to identify the type of scripts. As long as a `<script>` tag has any type other than javascript, ESLint would mark the script as non-javascript, and skips linting it. Coffeescript’s convention is to use `type="text/coffeescript"` to identify itself. Therefore, in your Vue components which are using Coffeescript, using both `lang` and `type` to avoid ESLint warnings. 
