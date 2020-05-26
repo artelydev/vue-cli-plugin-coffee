@@ -1,17 +1,17 @@
-module.exports = function(API) {
-  return API.configureWebpack(function() {
+module.exports = function (API) {
+  return API.configureWebpack(function () {
     return {
       resolve: {
-        extensions: ['.coffee']
+        extensions: [".coffee"],
       },
       module: {
         rules: [
           {
             test: /\.coffee$/,
-            loader: 'coffee-loader'
-          }
-        ]
-      }
+            loader: "coffee-loader",
+          },
+        ],
+      },
     };
   });
 };

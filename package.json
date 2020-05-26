@@ -1,11 +1,8 @@
 {
   "name": "vue-cli-plugin-coffee",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "CoffeeScript2 support for your @vue/cli project",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/cxsper/vue-cli-plugin-coffee.git"
@@ -19,9 +16,12 @@
     "coffee"
   ],
   "author": "ilovewindows96@gmail.com",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/cxsper/vue-cli-plugin-coffee/issues"
   },
-  "homepage": "https://github.com/cxsper/vue-cli-plugin-coffee#readme"
+  "homepage": "https://github.com/cxsper/vue-cli-plugin-coffee#readme",
+  "devDependencies": {
+    "prettier": "^2.0.5"
+  }
 }
