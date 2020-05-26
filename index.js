@@ -20,16 +20,11 @@ module.exports = (API, projectOptions) => {
     }
 
     if (API.hasPlugin("babel")) {
-      coffeeRule
-        .use("babel-loader")
-        .loader(require.resolve("babel-loader"))
-        .options({
-          presets: ["@babel/preset-env"],
-        });
+      coffeeRule.use("babel-loader").loader(require.resolve("babel-loader"));
     }
 
     coffeeRule.use("coffee-loader").loader(require.resolve("coffee-loader"));
 
-    coffeeRule.exclude.add(() => ["node_modules", "bower_components"]).end();
+    coffeeRule.exclude.add("node_modules").end();
   });
 };

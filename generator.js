@@ -1,7 +1,11 @@
+const pluginDeps = require("./package.json").dependencies;
+const pluginPeerDeps = require("./package.json").peerDependencies;
+
 module.exports = (API) => {
   return API.extendPackage({
     devDependencies: {
-      coffeescript: require("./package.json").peerDependencies.coffeescript,
+      "coffee-loader": pluginDeps["coffee-loader"],
+      coffeescript: pluginPeerDeps.coffeescript,
     },
   });
 };

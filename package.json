@@ -1,6 +1,6 @@
 {
   "name": "vue-cli-plugin-coffee",
-  "version": "0.5.8",
+  "version": "0.5.9",
   "description": "CoffeeScript2 support for your @vue/cli project",
   "main": "index.js",
   "repository": {
@@ -28,7 +28,6 @@
   },
   "dependencies": {
     "@babel/core": "^7.9.6",
-    "@babel/preset-env": "^7.9.6",
     "babel-loader": "^8.1.0",
     "cache-loader": "^4.1.0",
     "coffee-loader": "^1.0.0",
