@@ -2,6 +2,9 @@
 
 CoffeeScript2 support for the projects created with [@vue/cli](https://github.com/vuejs/vue-cli).
 
+With built-in:
+* `cache-loader`
+
 ## Installation
 
 According to [this](https://cli.vuejs.org/guide/plugins-and-presets.html#installing-plugins-in-an-existing-project) you are able to install community plugins as follows:
@@ -25,10 +28,6 @@ module.exports = {
 }
 
 ```
-
-## -coffeescript
-
-I found [this](https://github.com/thisredone/vue-cli-plugin-coffeescript) package but apparently it does some `main.coffee` searching and replacement. While it is not bad by any means, it seems to me like a custom behavior. Want to keep things as clean as possible :sparkles:
 
 ## Troubleshooting
 
