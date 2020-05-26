@@ -1,3 +1,5 @@
+const path = require("path");
+
 module.exports = (API, projectOptions) => {
   API.chainWebpack((config) => {
     config.resolveLoader.modules.prepend(path.join(__dirname, "node_modules"));
