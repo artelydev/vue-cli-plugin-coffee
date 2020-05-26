@@ -6,14 +6,10 @@ module.exports = (API, projectOptions) => {
 
     config.resolve.extensions.prepend(".coffee");
 
-    if (!projectOptions.pages) {
-      config.entry("app").clear().add("./src/main.coffee");
-    }
     const coffeeRule = config.module
       .rule("coffee")
       .test(/\.coffee$/)
-      .exclude.add(() => ["node_modules", "bower_components"])
-      .end();
+      .exclude.add(() => ["node_modules", "bower_components"]);
 
     coffeeRule.use("cache-loader").loader(require.resolve("cache-loader"));
 
