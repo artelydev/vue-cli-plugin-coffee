@@ -24,7 +24,5 @@ module.exports = (API, projectOptions) => {
     }
 
     coffeeRule.use("coffee-loader").loader(require.resolve("coffee-loader"));
-
-    coffeeRule.exclude.add("node_modules").end();
   });
 };
