@@ -7,7 +7,10 @@ module.exports = (API, projectOptions) => {
     if (!projectOptions.pages) {
       config.entry("app").clear().add("./src/main.coffee");
     }
-    const coffeeRule = config.module.rule("coffee").test(/\.coffee$/);
+    const coffeeRule = config.module
+      .rule("coffee")
+      .exclude(/node_modules|bower_components/)
+      .test(/\.coffee$/);
 
     coffeeRule.use("cache-loader").loader(require.resolve("cache-loader"));
 
