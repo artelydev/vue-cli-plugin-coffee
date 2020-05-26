@@ -1,6 +1,6 @@
 {
   "name": "vue-cli-plugin-coffee",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "CoffeeScript2 support for your @vue/cli project",
   "main": "index.js",
   "repository": {
@@ -22,6 +22,8 @@
   },
   "homepage": "https://github.com/cxsper/vue-cli-plugin-coffee#readme",
   "devDependencies": {
+    "eslint": "^7.1.0",
+    "eslint-config-airbnb": "^18.1.0",
     "prettier": "^2.0.5"
   }
 }
