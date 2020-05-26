@@ -7,10 +7,18 @@ module.exports = (API, projectOptions) => {
     if (!projectOptions.pages) {
       config.entry("app").clear().add("./src/main.coffee");
     }
-
     const coffeeRule = config.module.rule("coffee").test(/\.coffee$/);
 
     coffeeRule.use("cache-loader").loader(require.resolve("cache-loader"));
+
+    if (process.env.NODE_ENV === "production" && !!projectOptions.parallel) {
+      coffeeRule
+        .use("thread-loader")
+        .loader(require.resolve("thread-loader"))
+        .options(
+          typeof projectOptions.parallel === "number" ? { workers: projectOptions.parallel } : {},
+        );
+    }
 
     coffeeRule.use("coffee-loader").loader(require.resolve("coffee-loader"));
   });

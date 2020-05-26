@@ -4,6 +4,7 @@ CoffeeScript2 support for the projects created with [@vue/cli](https://github.co
 
 With built-in:
 * `cache-loader`
+* `thread-loader`
 * `src/main.coffee` support if you're not using `config.pages`
 
 ## Installation
