@@ -2,6 +2,8 @@ module.exports = (API, projectOptions) => {
   API.chainWebpack((config) => {
     config.resolveLoader.modules.prepend(path.join(__dirname, "node_modules"));
 
+    config.resolve.extensions.prepend(".coffee");
+
     if (!projectOptions.pages) {
       config.entry("app").clear().add("./src/main.coffee");
     }
