@@ -20,6 +20,15 @@ module.exports = (API, projectOptions) => {
         );
     }
 
+    if (api.hasPlugin("babel")) {
+      coffeeRule
+        .use("babel-loader")
+        .loader(require.resolve("babel-loader"))
+        .options({
+          presets: ["@babel/preset-env"],
+        });
+    }
+
     coffeeRule.use("coffee-loader").loader(require.resolve("coffee-loader"));
   });
 };
