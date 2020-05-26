@@ -26,7 +26,7 @@ module.exports = (API, projectOptions) => {
         );
     }
 
-    if (api.hasPlugin("babel")) {
+    if (API.hasPlugin("babel")) {
       coffeeRule
         .use("babel-loader")
         .loader(require.resolve("babel-loader"))
