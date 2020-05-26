@@ -6,7 +6,6 @@ With built-in:
 * `cache-loader`
 * `thread-loader`
 * `babel-loader`
-* `bower_components` and `node_modules` ignoring
 
 ## Installation
 
