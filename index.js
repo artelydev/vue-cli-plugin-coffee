@@ -11,8 +11,9 @@ module.exports = (API, projectOptions) => {
     }
     const coffeeRule = config.module
       .rule("coffee")
-      .exclude(/node_modules|bower_components/)
-      .test(/\.coffee$/);
+      .test(/\.coffee$/)
+      .exclude.add(() => ["node_modules", "bower_components"])
+      .end();
 
     coffeeRule.use("cache-loader").loader(require.resolve("cache-loader"));
 
