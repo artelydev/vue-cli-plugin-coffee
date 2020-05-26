@@ -1,8 +1,7 @@
-module.exports = function(API) {
+module.exports = (API) => {
   return API.extendPackage({
     devDependencies: {
-      "coffee-loader": "^0.9.0",
-      "coffeescript": "^2.3.2",
-    }
+      coffeescript: require("./package.json").peerDependencies.coffeescript,
+    },
   });
-}
+};

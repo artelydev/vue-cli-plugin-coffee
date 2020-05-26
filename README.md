@@ -6,7 +6,6 @@ With built-in:
 * `cache-loader`
 * `thread-loader`
 * `babel-loader`
-* `src/main.coffee` support if you're not using `config.pages`
 
 ## Installation
 
@@ -14,6 +13,27 @@ According to [this](https://cli.vuejs.org/guide/plugins-and-presets.html#install
 
 ```shell
 vue add coffee
+```
+
+## Common usage
+
+Usually you write SFC like this
+
+```vue
+<template>
+  <button @click="onclick">
+    <slot></slot>
+  </button>
+</template>
+
+<script lang="coffee">
+  export default
+    name: "Button"
+    props:
+      onclick:
+        type: Function
+        required: false
+</script>
 ```
 
 ## Entries

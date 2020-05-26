@@ -8,8 +8,6 @@ module.exports = (API, projectOptions) => {
 
     const coffeeRule = config.module.rule("coffee").test(/\.coffee$/);
 
-    coffeeRule.exclude.add(() => ["node_modules", "bower_components"]).end();
-
     coffeeRule.use("cache-loader").loader(require.resolve("cache-loader"));
 
     if (process.env.NODE_ENV === "production" && !!projectOptions.parallel) {
@@ -31,5 +29,7 @@ module.exports = (API, projectOptions) => {
     }
 
     coffeeRule.use("coffee-loader").loader(require.resolve("coffee-loader"));
+
+    coffeeRule.exclude.add(() => ["node_modules", "bower_components"]).end();
   });
 };
