@@ -22,7 +22,7 @@
   },
   "homepage": "https://github.com/cxsper/vue-cli-plugin-coffee#readme",
   "devDependencies": {
-    "eslint": "7.1.0",
+    "eslint": "7.2.0",
     "eslint-config-airbnb": "18.1.0",
     "prettier": "2.0.5"
   },
