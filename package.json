@@ -1,6 +1,6 @@
 {
   "name": "vue-cli-plugin-coffee",
-  "version": "0.5.13",
+  "version": "1.0.0",
   "description": "CoffeeScript2 support for your @vue/cli project",
   "main": "index.js",
   "repository": {
