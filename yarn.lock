@@ -343,13 +343,10 @@ chalk@^4.0.0:
     ansi-styles "^4.1.0"
     supports-color "^7.1.0"
 
-coffee-loader@^1.0.0:
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/coffee-loader/-/coffee-loader-1.0.0.tgz#b8cedc8c81eb2a435af59e4b369ece439261fcb4"
-  integrity sha512-/fjJBA842cpoN2upABQFO45ALS0clTHM8WsAbvDrArn6y4TaZikKgSPyMZxwqAkkz6zTV7MgS4RuxU3wS4XUvw==
-  dependencies:
-    loader-utils "^2.0.0"
-    schema-utils "^2.6.6"
+coffee-loader@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/coffee-loader/-/coffee-loader-2.0.0.tgz#76f4e193074cea8bf3e226aaed5ea356d3380c1b"
+  integrity sha512-fCq1T1b8ByUiPcWRMe3HCgvfS9h8kahRWR44Mew57x7Xm5MsNg9mjnV4XHHj6rWQS2+8SMYavHJQHQDUNybqhw==
 
 color-convert@^1.9.0:
   version "1.9.3"
@@ -1166,7 +1163,7 @@ safe-buffer@~5.1.1:
   resolved "https://registry.yarnpkg.com/safe-buffer/-/safe-buffer-5.1.2.tgz#991ec69d296e0313747d59bdfd2b745c35f8828d"
   integrity sha512-Gd2UZBJDkXlY7GbJxfsE8/nvKkUEU1G38c1siN6QP6a9PT9MmHB8GnpscSmMJSoF8LOIrt8ud/wPtojys4G6+g==
 
-schema-utils@^2.0.0, schema-utils@^2.6.5, schema-utils@^2.6.6:
+schema-utils@^2.0.0, schema-utils@^2.6.5:
   version "2.6.6"
   resolved "https://registry.yarnpkg.com/schema-utils/-/schema-utils-2.6.6.tgz#299fe6bd4a3365dc23d99fd446caff8f1d6c330c"
   integrity sha512-wHutF/WPSbIi9x6ctjGGk2Hvl0VOz5l3EKEuKbjPlB30mKZUzb9A5k9yEXRX3pwyqVLPvpfZZEllaFq/M718hA==
