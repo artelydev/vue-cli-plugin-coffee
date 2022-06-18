@@ -24,7 +24,7 @@
   "devDependencies": {
     "eslint": "7.12.1",
     "eslint-config-airbnb": "18.2.0",
-    "prettier": "2.1.2"
+    "prettier": "2.7.1"
   },
   "dependencies": {
     "@babel/core": "^7.9.6",
