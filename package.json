@@ -5,7 +5,7 @@
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/cxsper/vue-cli-plugin-coffee.git"
+    "url": "git+https://github.com/artelydev/vue-cli-plugin-coffee.git"
   },
   "keywords": [
     "CoffeeScript2",
@@ -18,9 +18,9 @@
   "author": "ilovewindows96@gmail.com",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/cxsper/vue-cli-plugin-coffee/issues"
+    "url": "https://github.com/artelydev/vue-cli-plugin-coffee/issues"
   },
-  "homepage": "https://github.com/cxsper/vue-cli-plugin-coffee#readme",
+  "homepage": "https://github.com/artelydev/vue-cli-plugin-coffee#readme",
   "devDependencies": {
     "eslint": "7.12.1",
     "eslint-config-airbnb": "18.2.0",
