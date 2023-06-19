@@ -23,7 +23,7 @@
   "homepage": "https://github.com/artelydev/vue-cli-plugin-coffee#readme",
   "devDependencies": {
     "eslint": "7.32.0",
-    "eslint-config-airbnb": "18.2.1",
+    "eslint-config-airbnb": "19.0.4",
     "prettier": "2.7.1"
   },
   "dependencies": {
